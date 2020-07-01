@@ -14,23 +14,13 @@ const router = new VueRouter({
           component: swiper,
         }
       ]
-    }
+    },
+    {
+      name: '案例合集',
+      path: '*',
+      redirect: '/content/swiper',
+  }
   ]
 })
 
 export default router;
-// import Vue from 'vue'
-// import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
-
-// Vue.use(Router)
-
-// export default new Router({
-//   routes: [
-//     {
-//       path: '/',
-//       name: 'HelloWorld',
-//       component: HelloWorld
-//     }
-//   ]
-// })
